@@ -9,6 +9,32 @@ class VK(BasePage):
     url = 'https://vk.com'
 
     @property
+    def profile(self):
+        """
+        The profile page
+        Раздел "Моя страница"
+        :return:
+        """
+        locator = Locator(by=By.ID, value='l_pr')
+        return BaseElement(
+            driver=self.driver,
+            locator=locator
+        )
+
+    @property
+    def news(self):
+        """
+        The news page
+        Раздел "Новости"
+        :return:
+        """
+        locator = Locator(by=By.ID, value='l_nwsf')
+        return BaseElement(
+            driver=self.driver,
+            locator=locator
+        )
+
+    @property
     def messages(self):
         """
         The personal messages page
@@ -16,6 +42,110 @@ class VK(BasePage):
         :return:
         """
         locator = Locator(by=By.ID, value='l_msg')
+        return BaseElement(
+            driver=self.driver,
+            locator=locator
+        )
+
+    @property
+    def friends(self):
+        """
+        The friends page
+        Раздел "Друзья"
+        :return:
+        """
+        locator = Locator(by=By.ID, value='l_fr')
+        return BaseElement(
+            driver=self.driver,
+            locator=locator
+        )
+
+    @property
+    def groups(self):
+        """
+        The groups page
+        Раздел "Сообщества"
+        :return:
+        """
+        locator = Locator(by=By.ID, value='l_gr')
+        return BaseElement(
+            driver=self.driver,
+            locator=locator
+        )
+
+    @property
+    def photos(self):
+        """
+        The photos page
+        Раздел "Фотографии"
+        :return:
+        """
+        locator = Locator(by=By.ID, value='l_ph')
+        return BaseElement(
+            driver=self.driver,
+            locator=locator
+        )
+
+    @property
+    def audio(self):
+        """
+        The music page
+        Раздел "Аудиозаписи"
+        :return:
+        """
+        locator = Locator(by=By.ID, value='l_aud')
+        return BaseElement(
+            driver=self.driver,
+            locator=locator
+        )
+
+    @property
+    def video(self):
+        """
+        The video page
+        Раздел "Видеозаписи"
+        :return:
+        """
+        locator = Locator(by=By.ID, value='l_vid')
+        return BaseElement(
+            driver=self.driver,
+            locator=locator
+        )
+
+    @property
+    def clips(self):
+        """
+        The clips page
+        Раздел "Клипы"
+        :return:
+        """
+        locator = Locator(by=By.ID, value='l_svd')
+        return BaseElement(
+            driver=self.driver,
+            locator=locator
+        )
+
+    @property
+    def apps(self):
+        """
+        The apps page
+        Раздел "Игры"
+        :return:
+        """
+        locator = Locator(by=By.ID, value='l_ap')
+        return BaseElement(
+            driver=self.driver,
+            locator=locator
+        )
+
+    @property
+    def job(self):
+        """
+        The jobs page
+        Раздел "Работа"
+        :return:
+        """
+        locator = Locator(by=By.ID, value='l_job')
         return BaseElement(
             driver=self.driver,
             locator=locator
