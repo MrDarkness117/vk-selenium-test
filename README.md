@@ -4,6 +4,7 @@
 This is made for implicit testing. No future plans for this project, though I would like to implement more features for testing and practice purposes.
 I also plan on introducing Pytest library.
 
+Of course, you will need Python first. Go to `python.org` and get Python 3.6 or higher.
 To run you need Selenium: `"pip install selenium"`
 It is preferred if you run Selenium as a separate venv. Activate the venv using `~/venv/Scripts/activate` (MAC/Linux) `activate.bat` (Windows) `./activate.ps1` (PowerShell)
 Navigate to the library cd `./vk-selenium-test` and run `py main.py`
